@@ -230,7 +230,8 @@ aside #nurse1{
 
 .container6{
     display: grid;
-    grid-template-columns: repeat(2,1fr);       
+    grid-template-columns: repeat(2,1fr);  
+    position: absolute;     
 }
 
 .centrar2{
@@ -249,11 +250,13 @@ aside #nurse1{
 .container7{
     display: grid;
     grid-template-columns: repeat(2,1fr);    
+    position: relative;
+    top: 425px;    
 }
 
 #mujer{
     height: 600px;
-    width: 40%;    
+    width: 45%;    
     position: absolute;   
 }
 
@@ -305,15 +308,96 @@ aside #nurse1{
     -webkit-box-shadow:  0px 30px 50px -15px rgb(21, 83, 215,  0.178);
     -moz-box-shadow:     0px 30px 50px -15px rgb(21, 83, 215,  0.178); 
 }
+
+.container8{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 40%;
+    margin-top: 550px;    
+}
+
+.container-ultimo{
+    place-self: center;
+}
+.container-contacto{
+    place-self: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   
+    width: 600px;
+    gap: 3em;
+}
+
+.enfermero{
+    width: 100%;
+    height: 700px;
+
+}
+.icon4{
+    width:  60px;
+    height: 60px;
+    border-radius: 6px;
+    grid-column-start: 1;
+    grid-column-end:  1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    place-self: center;
+}
+
+.btn-final{
+    grid-column-start: 1;
+    grid-column-end:  3;
+    grid-row-start: 3;
+    grid-row-end: -1;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    color: #3252CD;
+    background-color: #F1F5FF;
+    border: none;
+    border-radius: 6px;        
+}
+.btn-final:hover{
+    background-color: #2B4BC9 ;
+    color: white;
+}
+.card-contact:hover{
+    box-shadow:          0px 30px 50px -15px rgba(21, 83, 215, 0.178);
+    -webkit-box-shadow:  0px 30px 50px -15px rgb(21, 83, 215,  0.178);
+    -moz-box-shadow:     0px 30px 50px -15px rgb(21, 83, 215,  0.178); 
+}
+.card-contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    border-radius: 6px;
+}
+.titlo-card2{
+    justify-self: left;
+    align-self:flex-end;
+    color: #294678;
+    font-size: x-large;
+}
+.complemento{
+    align-self: flex-end;
+    margin-bottom: 17px ;
+    font-size: small;
+    color: #758299;
+}
 .container0{
     display: flex;
     flex-flow: column wrap;    
+    background-image: url("../img/footer.png");
+    background-repeat: no-repeat;
+    background-size:auto;    
+    background-position:bottom;
+    width: 100%;
+    height: 30%;
 }
 
 .container01{
     display: flex;
     justify-content: space-around;
-    margin: 200px 0px;
+    margin: 150px 0px;    
 }
 
 .container02{
